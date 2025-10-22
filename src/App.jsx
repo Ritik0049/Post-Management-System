@@ -5,6 +5,7 @@ import { seedPosts } from '../data/seed';
 import PostList from './pages/PostList';
 import PostCreate from './pages/PostCreate';
 import PostEdit from './pages/PostEdit';
+import PostView from './pages/PostView';
 import useLocalStorage from './hooks/useLocalStorage';
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/' element={<PostList posts={posts} onDeletePost={handleDeletePost} />} />
           <Route path='/posts/new' element={<PostCreate setPosts={setPosts} />} />
           <Route path='/posts/:id/edit' element={<PostEdit posts={posts} setPosts={setPosts} />} />
+          <Route path='/posts/:id' element={<PostView posts={posts} />} />
         </Routes>
       </main>
     </div>
