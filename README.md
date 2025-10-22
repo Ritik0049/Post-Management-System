@@ -1,16 +1,51 @@
-# React + Vite
+POST MANAGEMENT SYSTEM
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+//Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A small React (Vite) app that allows users to create, view, edit, delete, and search posts.
+All data is stored in localStorage (no backend).
 
-## React Compiler
+//How to run locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.Open terminal in project folder.
 
-## Expanding the ESLint configuration
+2.Install dependencies:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   npm install
+
+3.Start the development server:
+
+   npm run dev
+
+
+
+// Features
+
+1.CRUD operations: create / read / update / delete posts.
+2.Search by title and filter by author.
+3.LocalStorage data persistence.
+4.Routing with React Router.
+5.Client-side validation with inline errors.
+6.Clean and responsive UI.
+
+//Project Structure
+data/
+ seed.js
+src/
+ components/
+ PostCard.jsx
+ PostForm.jsx
+ Header.jsx
+ pages/
+ PostList.jsx
+ PostCreate.jsx
+ PostEdit.jsx
+ PostView.jsx
+ hooks/
+ useLocalStorage.js
+ utils/
+ validators.js
+
+ App.jsx
+ main.jsx
