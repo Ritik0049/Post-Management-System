@@ -31,6 +31,7 @@ All data is stored in localStorage (no backend).
 4.Routing with React Router.
 
 5.Client-side validation with inline errors.
+
 6.Clean and responsive UI.
 
 
